@@ -20,5 +20,6 @@ $("#ogFYI").change(function() {
     text = text.replace("FYi", "");
     text = text.replace("fYi", "");
     text = text.replace("fyI", "");
+    text = text.replace("FYI", "");
     $("#correctMessage").text("fyi - " + text);
 });
