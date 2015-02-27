@@ -21,5 +21,5 @@ $("#ogFYI").change(function() {
     text = text.replace(/fYi/g, "");
     text = text.replace(/fyI/g, "");
     text = text.replace(/FYI/g, "");
-    $("#correctMessage").text("fyi - " + text);
+    $("#correctMessage").text("FYI: " + text);
 });
