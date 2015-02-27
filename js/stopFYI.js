@@ -1,5 +1,19 @@
-$("textarea").each(function() {
-    var text = $(this).value();
+$("#ogFYI").change(function() {
+    var text = $(this).text();
+    text = text.replace("FYI...", "");
+    text = text.replace("FYI..", "");
+    text = text.replace("FYI.", "");
+    text = text.replace("FYI-", "");
+    text = text.replace("FYI - ", "");
+    text = text.replace("F.Y.I.", "");
+    text = text.replace("F.Y.I", "");
+    text = text.replace("fyi...", "");
+    text = text.replace("fyi..", "");
+    text = text.replace("fyi.", "");
+    text = text.replace("fyi -", "");
+    text = text.replace("fyi-", "");
+    text = text.replace("f.y.i.", "");
+    text = text.replace("f.y.i", "");
     text = text.replace("fyi", "");
-    $(this).value(text);
+    $("#correctMessage").text("fyi - "+text);
 });
