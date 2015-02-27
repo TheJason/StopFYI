@@ -1,5 +1,5 @@
 $("#ogFYI").change(function() {
-    var text = $(this).text();
+    var text = $(this).value();
     text = text.replace("FYI...", "");
     text = text.replace("FYI..", "");
     text = text.replace("FYI.", "");
@@ -15,5 +15,5 @@ $("#ogFYI").change(function() {
     text = text.replace("f.y.i.", "");
     text = text.replace("f.y.i", "");
     text = text.replace("fyi", "");
-    $("#correctMessage").text("fyi - "+text);
+    $("#correctMessage").text("fyi - " + text);
 });
