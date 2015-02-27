@@ -1,5 +1,5 @@
 $("#ogFYI").change(function() {
-    var text = $(this).value();
+    var text = $(this).val();
     text = text.replace("FYI...", "");
     text = text.replace("FYI..", "");
     text = text.replace("FYI.", "");
